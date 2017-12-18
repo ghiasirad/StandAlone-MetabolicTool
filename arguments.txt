@@ -1,0 +1,13 @@
+Sample Test Case:
+-d 6000,10 -s 600 -m taylor -w M1 -f glycolysisPathwaysample.xml -e SubstratesDatabase-05-04-2017-ProgramPurpose-sample.txt -g NanConst -i 4.25,11.55,74.83,42.62;260,50,50;180 -c initialConcentrations0.txt
+
+More Complex Test Case:
+-d 6000,10 -s 600 -m taylor -w C00267 -f metabolicPathway-05-16-2017-DebugPurpose.xml -e SubstratesDatabase-05-04-2017-ProgramPurpose-sample.txt -g NanConst -i 4.25,11.55,74.83,42.62;260,50,50;180 -c initialConcentrations0.txt
+
+More Complex Test Case with gene:
+-d 6000,10 -s 600 -m taylor -w C00267 -f metabolicPathway-05-16-2017-DebugPurpose.xml -e SubstratesDatabase-05-04-2017-ProgramPurpose-sample.txt -g 7_rsem_out.genes.results,32_rsem_out.genes.results,33_rsem_out.genes.results -i 4.25,11.55,74.83,42.62;260,50,50;180 -c initialConcentrations0.txt
+
+-d 6000,10 -s 600 -m taylor -w C00267 -f metabolicPathway-05-16-2017-DebugPurpose.xml -e SubstratesDatabase-05-04-2017-ProgramPurpose-sample.txt -g expression1Modified-Rand.txt,expression2Modified-Rand.txt,expression3Modified-Rand.txt -i 4.25,11.55,74.83,42.62;260,50,50;180 -c initialConcentrations0.txt
+
+Ode of C00020 is: 
+  + (1.0 * 1.0 * [C05560]^1.0[C11482]^1.0) + (-1.0 * 0.1 * [C05535]^1.0[C00020]^1.0) + (1.0 * 2.0 * [C00002]^1.0[C00327]^1.0[C00049]^1.0) + (-1.0 * 0.5 * [C00020]^1.0[C00013]^1.0[C03406]^1.0)
